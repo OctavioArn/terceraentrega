@@ -38,5 +38,5 @@ confirmButton.innerHTML = "Confirm Order";
 mainSection.appendChild(confirmButton);
 
 confirmButton.addEventListener("click", () => {
-    window.location.href = "/checkout.html";
+    window.location.href = "./checkout.html";
 });
