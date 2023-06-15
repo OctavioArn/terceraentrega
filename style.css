@@ -73,6 +73,13 @@
     justify-content: center;
     align-items: center;
 }
+.button {
+    background-color: #fafafa;
+    padding: 5px;
+    border-radius: 20px;
+    color: black;
+    border: black 2px solid;
+}
 
 footer {
     padding-top: 20px;

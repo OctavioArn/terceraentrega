@@ -3,19 +3,46 @@ productsSection.id = "render-section";
 const mainSection = document.getElementById("allProducts");
 mainSection.appendChild(productsSection);
 
+
+
+const getProducts = async () => {
+    const response = await fetch("../data.json");
+    const data = await response.json();
+
+    return data;
+}
+
+const products = getProducts();
+
 products.forEach((product) => {
     const productDiv = document.createElement("div");
     productDiv.className = "product-div";
 
     productDiv.innerHTML = `
-    <h2 class="product-name">${product.name}</h2>
-    <p class="product-price">${product.price}</p>
-    <img class="product-image" src="${product.image}">
-    <button id="${product.id}" class="product-button">Add to Cart</button>
-`;
+        <h2 class="product-name">${product.name}</h2>
+        <p class="product-price">${product.price}</p>
+        <img class="product-image" src="${product.image}">
+        <button id="${product.id}" class="product-button">Add to Cart</button>`;
 
     productsSection.appendChild(productDiv);
 });
+
+
+//Lo que hicieron uds//
+
+// products.forEach((product) => {
+//     const productDiv = document.createElement("div");
+//     productDiv.className = "product-div";
+
+//     productDiv.innerHTML = `
+//     <h2 class="product-name">${product.name}</h2>
+//     <p class="product-price">${product.price}</p>
+//     <img class="product-image" src="${product.image}">
+//     <button id="${product.id}" class="product-button">Add to Cart</button>
+// `;
+
+//     productsSection.appendChild(productDiv);
+// });
 
 let ButtonListener = document.querySelectorAll(".product-button");
 
@@ -38,5 +65,5 @@ confirmButton.innerHTML = "Confirm Order";
 mainSection.appendChild(confirmButton);
 
 confirmButton.addEventListener("click", () => {
-    window.location.href = "./checkout.html";
+    window.location.href = "../pages/checkout.html";
 });

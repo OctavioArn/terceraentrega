@@ -14,3 +14,14 @@ let total = order.products.reduce(
 );
 
 totalPrice.innerHTML = `Total: ${total}`;
+
+// let goBack = document.createElement("button");
+// goBack.id = "go-back";
+// goBack.innerHTML = "Go back";
+
+// mainSection.appendChild(goBack);
+
+// goBack.addEventListener("click", () => {
+//     window.location.href = "../index.html";
+// });
+

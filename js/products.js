@@ -5,7 +5,7 @@ const products = [
         id: 1,
         category: "beer",
         quantity: 1,
-        image: "./img/cerveza-patagonia.png"
+        image: "../img/cerveza-patagonia.png"
     },
     {
         name: "Cerveza Heineken",
@@ -13,7 +13,7 @@ const products = [
         id: 2,
         category: "beer",
         quantity: 1,
-        image: "./img/heineken-original-bottle.png"
+        image: "../img/heineken-original-bottle.png"
     },
     {
         name: "Cerveza Quilmes",
@@ -21,7 +21,7 @@ const products = [
         id: 3,
         category: "beer",
         quantity: 1,
-        image: "./img/quilmes-3.png"
+        image: "../img/quilmes-3.png"
     },
     {
         name: "Papas fritas",
@@ -29,7 +29,7 @@ const products = [
         id: 4,
         category: "food",
         quantity: 1,
-        image: "./img/papas-fritas.png"
+        image: "../img/papas-fritas.png"
     },
     {
         name: "Hamburguesa",
@@ -37,7 +37,7 @@ const products = [
         id: 5,
         category: "food",
         quantity: 1,
-        image: "./img/hamburguesa.png"
+        image: "../img/hamburguesa.png"
     },
     {
         name: "Lomito",
@@ -45,6 +45,6 @@ const products = [
         id: 6,
         category: "food",
         quantity: 1,
-        image: "./img/lomito.png"
+        image: "../img/lomito.png"
     },
 ];
